@@ -3,75 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Amazon Clone</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <header>
-      <nav>
-        <div class="navbar">
-          <!-- logo -->
-          <div class="logo">
-            <img
-              src="image/Amazon-Logo-White-PNG-Image.png"
-              alt="amazon"
-              height="35px"
-              widhth="200px"
-            />
-          </div>
-          <!-- button -->
-          <button class="location">
-            <i id="loctag" class="fa-solid fa-location-dot"></i
-            ><span class="text">
-              Delivery tp Delhi <br /><b class="bold">Update Location</b>
-            </span>
-          </button>
-          <!-- search bar -->
-          <select class="category">
-            <option>All</option>
-            <option>Books</option>
-            <option>Electronics</option>
-            <option>Fashion</option>
-          </select>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-          <div class="search-bar">
-            <input
-              type="text"
-              placeholder="Search Amazon.in"
-              class="search-input"/>
-            
-            <button class="search-btn">
-              <i class="fa-sharp-duotone fa-solid fa-magnifying-glass"></i>
-            </button>
+  <body>
+    <header class="header">
+      <!-- logo -->
+      <nav class="navbar">
+        <div class="nav-left">
+          <img
+            src="image/Amazon-Logo-White-PNG-Image.png"
+            alt="Amazon"
+            class="logo"
+          />
+
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <span>Deliver to Delhi</span>
+              <br><strong>Update location</strong>
+            </div>
           </div>
-          <!-- language -->
-          <div class="language">
+        </div>
+
+        <div class="nav-search">
+          <select>
+            <option>All</option>
+          </select>
+          <input type="text" placeholder="Search Amazon.in" />
+          <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <div class="nav-right">
+           <div class="language">
             <img class="im" src="image/flag.png" alt="" />
           </div>
-          <p class="english"><b>EN</b></p>
+          
+          
           <i id="arrow" class="fa-solid fa-circle-chevron-down"></i>
-          <!-- sign in -->
-          <button class="sign-in">Sign In<br /><b>Account & Lists</b></button>
-          <i id="arrow" class="fa-solid fa-circle-chevron-down"></i>
-          <!-- returns & orders -->
-          <button class="returns-orders">Returns<br /><b>& Orders</b></button>
-          <!-- cart -->
-          <i id="cart" class="fa-solid fa-cart-arrow-down"></i>
-          <p class="size"><b>Cart</b></p>
+          
+          <div class="account">
+            <span>Hello, Sign in</span><br>
+            <strong>Account & Lists</strong>
+          </div>
+
+          <div class="orders">
+            <span>Returns</span>
+            <strong>& Orders</strong>
+          </div>
+
+          <div class="cart">
+            <i class="fa-solid fa-cart-arrow-down"></i>
+            <span>Cart</span>
+          </div>
         </div>
       </nav>
-      <!-- navtwo -->
-      <div class="navtwo">
+
+      <!-- Bottom Navbar -->
+      <div class="subnav">
         <div class="menu">
-          <i id="menu" class="fa-solid fa-bars"></i>
+          <i id="line" class="fa-solid fa-bars"></i>
           <span class="all">All</span>
         </div>
-        <ul class="nav-links">
+
+        <ul class="subnav-links">
           <li>Fresh</li>
           <li>MX Player</li>
           <li>Sell</li>
@@ -89,109 +92,181 @@
         </ul>
       </div>
     </header>
-    <div >
-      <img src="image/amazon-background.jpg" alt="" class="banner">
-      <section class="cards">
-    <div class="card">
+
+    <!-- hero section -->
+    <section class="hero">
+      <img src="image/amazon-background.jpg" alt="Amazon Banner" />
+    </section>
+
+<!-- product card -->
+    <main class="cards-container">
+      <section class="card">
         <h2>Revamp your home in style</h2>
-        <div class="grid">
+        <div class="card-grid">
           <div>
-             <img src="image/img1.jpg">
-             <p>Cusion cover & Bedsheet</p>
+            <img src="image/img1.jpg" />
+            <p>Cushion covers</p>
           </div>
-           <div>
-                <img src="image/img2.jpg">
-                <p>Figurines</p>
-            </div>
-            <div>
-                <img src="image/img3.jpg">
-                <p>Home storage</p>
-            </div>
-            <div>
-                <img src="image/img4.jpg">
-                <p>Lighting solutions</p>
-            </div>
+          <div>
+            <img src="image/img2.jpg" />
+            <p>Figurines</p>
+          </div>
+          <div>
+            <img src="image/img3.jpg" />
+            <p>Storage</p>
+          </div>
+          <div>
+            <img src="image/img4.jpg" />
+            <p>Lighting</p>
+          </div>
         </div>
         <a href="#">Explore all</a>
-    </div>
+      </section>
 
-    
-    <div class="card">
-        <h2>Bulk order discounts</h2>
-        <div class="grid">
-            <div>
-                <img src="image/img5.jpg">
-                <p>Up to 45% off | Laptops</p>
-            </div>
-            <div>
-                <img src="image/img6.jpg">
-                <p>Kitchen appliances</p>
-            </div>
-            <div>
-                <img src="image/img7.jpg">
-                <p>Office furniture</p>
-            </div>
-            <div>
-                <img src="image/img8.jpg">
-                <p>Business purchases</p>
-            </div>
-            <a href="#">Create Free Account</a>
-
-        </div>
-        </div>
-        <div class="card">
+      <section class="card">
         <h2>Appliances for your home</h2>
-        <div class="grid">
-            <div>
-                <img src="image/img9.jpg">
-                <p>Air conditioners</p>
-            </div>
-            <div>
-                <img src="image/img10.jpg">
-                <p>Refrigerators</p>
-            </div>
-            <div>
-                <img src="image/img11.jpg">
-                <p>Microwaves</p>
-            </div>
-            <div>
-                <img src="image/img12.jpg">
-                <p>Washing machines</p>
-            </div>
+        <div class="card-grid">
+          <div>
+            <img src="image/img9.jpg" />
+            <p>Air conditioners</p>
+          </div>
+          <div>
+            <img src="image/img10.jpg" />
+            <p>Refrigerators</p>
+          </div>
+          <div>
+            <img src="image/img11.jpg" />
+            <p>Microwaves</p>
+          </div>
+          <div>
+            <img src="image/img12.jpg" />
+            <p>Washing machines</p>
+          </div>
         </div>
         <a href="#">See more</a>
-    </div>
+      </section>
 
-    <div class="card">
+      <section class="card">
         <h2>Starting ₹49 | Home essentials</h2>
-        <div class="grid">
-            <div>
-                <img src="image/img13.jpg">
-                <p>Cleaning supplies</p>
-            </div>
-            <div>
-                <img src="image/img14.jpg">
-                <p>Bathroom accessories</p>
-            </div>
-            <div>
-                <img src="image/img15.jpg">
-                <p>Home tools</p>
-            </div>
-            <div>
-                <img src="image/img16.jpg">
-                <p>Wallpapers</p>
-            </div>
+        <div class="card-grid">
+          <div>
+            <img src="image/img13.jpg" />
+            <p>Cleaning</p>
+          </div>
+          <div>
+            <img src="image/img14.jpg" />
+            <p>Bathroom</p>
+          </div>
+          <div>
+            <img src="image/img15.jpg" />
+            <p>Tools</p>
+          </div>
+          <div>
+            <img src="image/img16.jpg" />
+            <p>Wall décor</p>
+          </div>
         </div>
         <a href="#">Explore all</a>
-    </div>
-       
-    </div>
-  </section>
-  <div class="row2">  </div>
-  <div class="down">
+      </section>
 
-  </div>
+      <section class="card">
+        <h2>Bulk order discounts</h2>
+        <div class="card-grid">
+          <div>
+            <img src="image/img5.jpg" />
+            <p>Laptops</p>
+          </div>
+          <div>
+            <img src="image/img6.jpg" />
+            <p>Kitchen</p>
+          </div>
+          <div>
+            <img src="image/img7.jpg" />
+            <p>Furniture</p>
+          </div>
+          <div>
+            <img src="image/img8.jpg" />
+            <p>Business</p>
+          </div>
+        </div>
+        <a href="#">Create free account</a>
+      </section>
+    </main>
     
-  </head>
-  <body></body>
+
+    <!-- footer -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amazon Footer</title>
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+  <footer class="amazon-footer">
+
+    <!-- Back to top -->
+    <div class="back-to-top">Back to top</div>
+
+    <!-- list -->
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Get to Know Us</h4>
+        <a href="#">About Amazon</a>
+        <a href="#">Careers</a>
+        <a href="#">Press Releases</a>
+        <a href="#">Amazon Science</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Connect with Us</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Make Money with Us</h4>
+        <a href="#">Sell on Amazon</a>
+        <a href="#">Sell under Amazon Accelerator</a>
+        <a href="#">Protect and Build Your Brand</a>
+        <a href="#">Amazon Global Selling</a>
+        <a href="#">Supply to Amazon</a>
+        <a href="#">Become an Affiliate</a>
+        <a href="#">Fulfilment by Amazon</a>
+        <a href="#">Advertise Your Products</a>
+        <a href="#">Amazon Pay on Merchants</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Let Us Help You</h4>
+        <a href="#">Your Account</a>
+        <a href="#">Returns Centre</a>
+        <a href="#">Recalls and Product Safety Alerts</a>
+        <a href="#">100% Purchase Protection</a>
+        <a href="#">Amazon App Download</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+
+    <!-- Bottom section -->
+    <div class="footer-bottom">
+      <div class="logo">amazon</div>
+      <div class="selectors">
+        <select>
+          <option>English</option>
+        </select>
+        <select>
+          <option>India</option>
+        </select>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+</html>
+
+  </body>
 </html>
